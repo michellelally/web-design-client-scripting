@@ -1,0 +1,36 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own -->
+
+	<head>
+		
+		<meta charset="UTF-8"> <!-- HTML5 charset -->
+		
+		<title>HTML5 Forms</title>
+		
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		
+	</head>
+
+	<body>
+		
+		<form>
+			<label>Dogs Name:</label> <br>
+			<input type="text" name="name" value="Name" size="50" maxlength="100"/> <br><br>
+		
+			<label>Gender:</label> <br>
+			<input type="radio" name="male" value="male"/> Male 
+			<input type="radio" name="female" value="female"/> Female <br><br>
+			
+			<label>Microchip Number:</label> <br>
+			<input type="password" name="microchip"/ maxlength="10" size="10" value="***********"> <br><br>
+			
+			<input type="reset"/>
+			<input type="button" value="Submit" onclick="alert('You clicked me!')"/>
+
+		</form>
+		
+	</body>
+</html>

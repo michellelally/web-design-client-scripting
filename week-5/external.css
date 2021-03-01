@@ -1,0 +1,35 @@
+
+#header {
+    border:none;
+    background-color: lightgreen;
+    display: block;
+    height: 60px;
+    text-align: center;
+
+}
+
+#side_bar {
+    background-color: lightseagreen;
+    display: inline;
+    width: 25%;
+    height: 90%;
+    float: left;
+    text-align: center;
+}
+
+#main_content {
+    background-color: lightsalmon;
+    display: inline;
+    width: 75%;
+    height: 90%;
+    float: right;
+    text-align: center;
+}
+
+#footer {
+    background-color: lightslategray;
+    height: 60px;
+    display: block;
+    text-align: center;
+    clear: both;
+}

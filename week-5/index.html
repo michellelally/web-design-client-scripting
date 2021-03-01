@@ -6,31 +6,40 @@
 		
 		<meta charset="UTF-8"> <!-- HTML5 charset -->
 		
-		<title>HTML5 Forms</title>
-		
-		<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+		<title>HTML5 Forms and Tables</title>
 		
 	</head>
 
 	<body>
-		
-		<form>
-			<label>Dogs Name:</label> <br>
-			<input type="text" name="name" value="Name" size="50" maxlength="100"/> <br><br>
-		
-			<label>Gender:</label> <br>
-			<input type="radio" name="male" value="male"/> Male 
-			<input type="radio" name="female" value="female"/> Female <br><br>
-			
-			<label>Microchip Number:</label> <br>
-			<input type="password" name="microchip"/ maxlength="10" size="10" value="***********"> <br><br>
-			
-			<input type="reset"/>
-			<input type="button" value="Submit" onclick="alert('You clicked me!')"/>
+	
+		<form id="dogs_form">
+
+			<table>
+
+				<tr>	
+					<td>Dogs Name:</td>
+					<td><input type="text" name="name" value="Name" size="50" maxlength="100"/></td>
+				</tr>
+
+				<tr>	
+					<td>Gender:</td>
+					<td><input type="radio" name="male" value="male"/> Male <input type="radio" name="female" value="female"/> Female</td>
+				</tr>
+
+				<tr>	
+					<td>Microchip Number:</td>
+					<td><input type="password" name="microchip" maxlength="10" size="10" value="***********"></td>
+				</tr>
+
+				<tr>	
+					<td><input type="reset"/></td>
+					<td><input type="button" value="Submit" onclick="alert('You clicked me!')"/></td>
+				</tr>
+				
+			</table> 
 
 		</form>
 		
 	</body>
+
 </html>

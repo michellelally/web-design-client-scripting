@@ -1,0 +1,41 @@
+h1 {
+    color:#293156;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3vw;
+}
+
+div {
+    padding: 0.25%;
+}
+
+#navbar_left{
+    height: 25%;
+    width: 25%;
+}
+
+#content {
+    text-align: center;
+    font-family: Copperplate, Papyrus, fantasy;
+
+}
+
+#link {
+    text-decoration: none;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_table {
+    max-width: 100%;
+    height: auto;
+    width: auto; 
+}
+
+#navbar_right {
+    float: right;
+    height: 25%;
+    width: 30%;
+}

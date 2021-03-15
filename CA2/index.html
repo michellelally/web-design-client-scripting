@@ -11,9 +11,12 @@
 
     <link rel="stylesheet" href="external.css"> <!-- External CSS Stylesheet link -->
 
-    <script src="external.js"> </script> <!-- External JavaScript link -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-    <title>CA2</title> <!-- ETitle of website -->
+    <script src="js.js"> </script> <!-- External JavaScript link -->
+
+
+    <title>CA2</title> <!-- Title of website -->
 
 </head>
 
@@ -22,8 +25,60 @@
 
     <div id="content">
         <h1>Finnegans</h1>
-        <p>JavaScript Alert Box</p>
-        <button type="button" onclick="alertBoxFunction()">Show me an alert box</button>
+        <p id="error_password"></p>
+
+        <h2>Please log in to place an order</h2>
+
+
+        <form id="order_form">
+
+            <table>
+
+                <tr>
+                    <td id="login_error"></td>
+                </tr>
+
+                <tr>
+                    <td>Username</td>
+                    <td><input type="text" name="username" id="username" size="25" maxlength="50" required /></td>
+                </tr>
+
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" name="password" id="password" size="25" value="*********" required />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="image" id="login_button" src="login.png" alt="submit" onclick="login()" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Select a burger</td>
+                    <td><select name="menu" class="burgers">
+                            <option>6oz - Large - €7</option>
+                            <option>10oz - Extra Large - €9</option>
+                            <option>16oz - Supersize - €17.50</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td>Quantity:</td>
+                    <td><input type="number" name="quantity" id="quantity" maxlength="3" size="3"></td>
+                </tr>
+
+                <tr>
+                    <td>Discount Code:</td>
+                    <td><input type="text" name="discount" id="discount" size="25" maxlength="25" required /></td>
+                </tr>
+
+
+
+            </table>
+
+        </form>
     </div>
 </body>
 

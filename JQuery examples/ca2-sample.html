@@ -1,0 +1,57 @@
+<!DOCTYPE html> <!-- HTML5 doctype -->
+<html lang="en"> <!-- HTML5 opening HTML tag with language. The HTML tag can also be used on it's own now. -->
+	<head>
+		<meta charset="UTF-8"> <!-- HTML5 charset -->
+		<title>Simple HTML Calculation form</title>
+		<script type="text/javascript" src="ca2.js"></script>
+		<link href="ca2.css" rel="stylesheet" type="text/css" /> 
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->		
+	</head>
+	<body>	
+	<form name="pizzaForm" action="#">
+	<form>
+		<table class="styled-table">
+		<tr>
+		<td>Your Name:</td><td><input type="text" name="name" required></td>
+		</tr>
+		<td>Password:</td><td><input type="password" name="password" required size="42" maxlength="42"></td>
+		</tr>
+		<tr>
+		<td>Email Address:</td><td><input type="email" name="email" required placeholder="Enter a valid email address"></td>
+		</tr>
+		<tr>
+		<td>Voucher:</td><td> <input type="text" required></td>
+		</tr> 
+		<tr>
+		<td>Select Pizza Size:</td>
+		<td>
+		<select name="pizzasize" required>
+			<option value="" disabled selected>Choose your option</option>
+			<option value="LA">LA  &euro; 5</option>
+			<option value="XL">XL  &euro; 7</option>
+			<option value="SU">SU  &euro; 17</option>
+
+		</select>
+		</td>
+		</tr>
+		<tr>
+		<td>Number of Pizza: </td>
+		<td><input title="Enter Number of Pizzas" id="pizzano" name="pizzano" type="text" size="2" 
+		    maxlength="2"  onchange="allnumeric(document.pizzaForm.pizzano,document.pizzaForm.pizzasize)">
+		</td> 
+		</tr> 
+	</table>	
+		<label><b>Pizza Order Total Amount</b></label>
+		<input name="tot_amount" id="tot_amount" type="text" readonly>
+		<input type='submit' id='submit' value='Submit' 
+		onclick="calculateTotal()" />
+
+	</form>
+	
+
+	
+	
+	</body>
+</html>

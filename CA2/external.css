@@ -12,3 +12,16 @@ div {
     text-align: center;
     font-family: Helvetica, Arial, sans-serif;
 }
+
+#order_form {
+    text-align: left;
+}
+
+input {
+    height: 20px;
+}
+
+#login_button {
+    height: 75px;
+    width: 100px;
+}

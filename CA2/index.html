@@ -35,6 +35,7 @@
             <table>
 
                 <tr>
+                    <td></td>
                     <td id="login_error"></td>
                 </tr>
 
@@ -51,13 +52,13 @@
 
                 <tr>
                     <td></td>
-                    <td><input type="image" id="login_button" src="login.png" alt="submit" onclick="login()" />
-                    </td>
+                    <td><button type="button" id="button" alt="submit" onclick="login()">LOGIN</button></td>
                 </tr>
 
                 <tr>
                     <td>Select a burger</td>
                     <td><select name="menu" class="burgers">
+                            <option value="" disabled selected>Choose your burger</option>
                             <option>6oz - Large - €7</option>
                             <option>10oz - Extra Large - €9</option>
                             <option>16oz - Supersize - €17.50</option>
@@ -74,11 +75,15 @@
                     <td><input type="text" name="discount" id="discount" size="25" maxlength="25" required /></td>
                 </tr>
 
-
+                <tr>
+                    <td></td>
+                    <td><button type="button" id="button" alt="submit" onclick="order()">SUBMIT</button></td>
+                </tr>
 
             </table>
 
         </form>
+
     </div>
 </body>
 

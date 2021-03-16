@@ -14,13 +14,6 @@
 
     <script src="js.js"> </script> <!-- External JavaScript link -->
 
-    <script>
-
-        function displayShow() {
-           document.getElementById("quantity").style.visibility = "visible";
-        }
-     </script> 
-
     <title>CA2</title> <!-- Title of website -->
 
 </head>
@@ -33,14 +26,12 @@
         <p id="error_password"></p>
 
         <h2>Please log in to place an order</h2>
-
-        <td><button type="button" id="hide" onclick="hide()">HIDE</button></td>
-
+        
         <form id="order_form">
 
             <table>
 
-                <tr>
+                <tr class="error">
                     <td id="error"></td>
                     <td id="login_error"></td>
                 </tr>

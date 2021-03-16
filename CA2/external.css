@@ -13,8 +13,8 @@ h1 {
     font-size: 3vw;
 }
 
-div {
-    padding: 10%;
+td {
+    padding: 10px;
 }
 
 #content {
@@ -25,6 +25,14 @@ div {
 
 #order_form {
     text-align: left;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.error {
+    color: darkred;
 }
 
 input {

@@ -26,6 +26,7 @@ function show() {
 }
 
 function hide() {
+    // same functionality as show, but hides the content instead
     for (let e of document.querySelectorAll('.hide'))
         e.style.visibility = 'hidden';
 }
@@ -40,35 +41,36 @@ function validateForm() {
 }
 
 function order(){
-    var burgerPrice;
-    var total;
+    var burgerPrice = 0;
+    var total = 0;
     var discountCode = 'tacotopping'; 
 
-    var burgers = document.getElementById("burgers").selectedIndex.value;
+    var burgers = document.getElementById("burgers").value;
 
-    alert("burger: " + result);
+    if (burgers == '6oz - Large - €7') {
+        burgerPrice = 7;
+    } else if (burgers == '10oz - Extra Large - €9') {
+        burgerPrice = 9;
+    } else if (burgers == '16oz - Supersize - €17.50') {
+        burgerPrice = 17.5;
+    }
 
     var quantity = document.getElementById("quantity").value;
-    alert("quantity: " + quantity);
 
     total = quantity * burgerPrice;
 
     var discount = document.getElementById("discount").value;
-    alert("discount: " + discount);
 
     // found this method on w3schools.com when researching the best way to compare strings 
     var x = discount.localeCompare(discountCode);
-    alert("x: " + x);
 
     if (x == 0) {
-        alert("code worked");
+        total = total - (total*0.1);
     }
 
-    document.getElementById("total").selectedIndex.value;
-
-
-
+    document.getElementById("total").innerHTML = 'Total: €' + total;
 }
+
 
 
 

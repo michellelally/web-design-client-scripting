@@ -1,8 +1,7 @@
-
-
 function signIn() {
+    validateForm();
+
     var password = document.getElementById("password").value.length;
-    alert(password);
 
     if (password < 9) {
         // elements already hidden in css, but if the user enters another password that isn't >9 characters, it will hide elements again
@@ -31,6 +30,7 @@ function hide() {
         e.style.visibility = 'hidden';
 }
 
+// used this function from the previous years example of CA2 
 function validateForm() {
     var x = document.forms["order_form"]["username"].value;
     if (x == null || x == "") {
@@ -39,10 +39,36 @@ function validateForm() {
     }
 }
 
-$(document).ready(function () {
-    $("select.menu").change(function () {
-        var selectedBurger = $(this).children("option:selected").val();
-        alert("You have selected the " + selectedBurger + " burger.");
-    });
-});
+function order(){
+    var burgerPrice;
+    var total;
+    var discountCode = 'tacotopping'; 
+
+    var burgers = document.getElementById("burgers").selectedIndex.value;
+
+    alert("burger: " + result);
+
+    var quantity = document.getElementById("quantity").value;
+    alert("quantity: " + quantity);
+
+    total = quantity * burgerPrice;
+
+    var discount = document.getElementById("discount").value;
+    alert("discount: " + discount);
+
+    // found this method on w3schools.com when researching the best way to compare strings 
+    var x = discount.localeCompare(discountCode);
+    alert("x: " + x);
+
+    if (x == 0) {
+        alert("code worked");
+    }
+
+    document.getElementById("total").selectedIndex.value;
+
+
+
+}
+
+
 

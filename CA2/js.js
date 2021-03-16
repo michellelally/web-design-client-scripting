@@ -1,3 +1,16 @@
+
+$(document).ready(function(){
+    $("select.burgers").change(function(){
+        var selectedBurger = $(this).children("option:selected").val();
+      //  alert("You have selected the burger - " + selectedBurger);
+
+
+        if (selectedBurger == '16oz - Supersize - €17.50'){
+            alert("Due to health and safey reasons, we must warn you that you've chosen the\n" + selectedBurger);
+        }
+
+    });
+});
 function signIn() {
     validateForm();
 

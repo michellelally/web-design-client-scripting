@@ -36,43 +36,44 @@ olo
                     <td id="login_error"></td>
                 </tr>
 
-                <tr>
+                <tr class="login">
                     <td>Username</td>
                     <td><input type="text" name="username" id="username" size="30" maxlength="50" /></td>
                 </tr>
 
-                <tr>
+                <tr class="login">
                     <td>Password</td>
                     <td><input type="password" name="password" id="password" size="30" />
                     </td>
                 </tr>
 
-                <tr>
+                <tr class="login">
                     <td></td>
                     <td><button type="button" id="login" onclick="signIn()">LOGIN</button></td>
                 </tr>
 
-                <tr class="hide">
+                <tr class="order">
                     <td>Select a burger</td>
                     <td><select name="menu" id="burgers" class="burgers">
                             <option value="" disabled selected>Choose your burger</option>
                             <option>6oz - Large - €7</option>
                             <option>10oz - Extra Large - €9</option>
                             <option>16oz - Supersize - €17.50</option>
-                        </select></td>
+                        </select>
+                    </td>
                 </tr>
 
-                <tr class="hide">
+                <tr class="order">
                     <td>Quantity:</td>
                     <td><input type="number" name="quantity" id="quantity" maxlength="3" size="3"></td>
                 </tr>
 
-                <tr class="hide">
+                <tr class="order">
                     <td>Discount Code:</td>
                     <td><input type="text" name="discount" id="discount" size="30" maxlength="25" /></td>
                 </tr>
 
-                <tr class="hide">
+                <tr class="order">
                     <td></td>
                     <td><button type="button" id="submit" alt="submit" onclick="order()">SUBMIT</button></td>
                 </tr>

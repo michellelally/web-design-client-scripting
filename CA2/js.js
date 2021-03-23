@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
     $("select.burgers").change(function(){
         var selectedBurger = $(this).children("option:selected").val();
@@ -11,20 +10,20 @@ $(document).ready(function(){
 
     });
 });
+
 function signIn() {
     validateForm();
 
     var password = document.getElementById("password").value.length;
 
     if (password < 9) {
-        // elements already hidden in css, but if the user enters another password that isn't >9 characters, it will hide elements again
-        hide();
-        // display error message 
         document.getElementById("error").innerHTML = "Error:"
         document.getElementById("login_error").innerHTML = "Password must be 9 characters in length"
     } else {
         // show the hidden elements so the user can complete the order
         show();
+        // hide the login 
+        hide();
         // removing the error messages
         document.getElementById("error").innerHTML = ""
         document.getElementById("login_error").innerHTML = ""
@@ -34,13 +33,13 @@ function signIn() {
 function show() {
     // using a for loop to set the visbility of each element in the hide class 
     // querySelectorAll() returns a collection of objects, so you have to iterate over each of them to change them individually
-    for (let e of document.querySelectorAll('.hide'))
+    for (let e of document.querySelectorAll('.order'))
         e.style.visibility = 'visible';
 }
 
 function hide() {
     // same functionality as show, but hides the content instead
-    for (let e of document.querySelectorAll('.hide'))
+    for (let e of document.querySelectorAll('.login'))
         e.style.visibility = 'hidden';
 }
 

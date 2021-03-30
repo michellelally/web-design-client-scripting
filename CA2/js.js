@@ -4,8 +4,8 @@ $(document).ready(function(){
       //  alert("You have selected the burger - " + selectedBurger);
 
 
-        if (selectedBurger == '16oz - Supersize - €17.50'){
-            alert("Due to health and safey reasons, we must warn you that you've chosen the\n" + selectedBurger);
+        if (selectedBurger == 3){
+            alert("Due to health and safey reasons, we must warn you that you've chosen the Supersize Burger");
         }
 
     });
@@ -59,11 +59,11 @@ function order(){
 
     var burgers = document.getElementById("burgers").value;
 
-    if (burgers == '6oz - Large - €7') {
+    if (burgers == 1) {
         burgerPrice = 7;
-    } else if (burgers == '10oz - Extra Large - €9') {
+    } else if (burgers == 2) {
         burgerPrice = 9;
-    } else if (burgers == '16oz - Supersize - €17.50') {
+    } else if (burgers == 3) {
         burgerPrice = 17.5;
     }
 
@@ -82,7 +82,3 @@ function order(){
 
     document.getElementById("total").innerHTML = 'Total: €' + total;
 }
-
-
-
-

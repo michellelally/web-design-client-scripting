@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+
 html {
 
     align-items: center;
     justify-content: center;
+
     background-image: url(burger-background.jpg);
     background-color: #464646;
     background-attachment: fixed;
 
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -14,33 +17,34 @@ html {
 
 h1 {
     text-align: center;
-    color: saddlebrown;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 3vw;
+    font-size: 2vw;
+}
+
+h3 {
+    text-align: center;
+    font-size: 1.3vw;
 }
 
 .header {
-    padding: 10px;
+    font-family: 'RocknRoll One', sans-serif;
     text-align: center;
-    background: blanchedalmond;
-    color: saddlebrown;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 3vw;
-  }
+    color:  #F04020;
+}
 
 td {
     padding: 10px;
 }
 
 #content {
-    padding-left: 10%;
-    font-family: Helvetica, Arial, sans-serif;
+    padding-left: 5%;
+    padding-top: 5%;
     color: sandybrown;
-    display: inline;
+    font-size: 1.1vw;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #login_form {
-    padding-left: 10%;
+    padding-left: 5%;
     text-align: left;
     float: left;
 }
@@ -58,8 +62,17 @@ td {
     color: darkred;
 }
 
-input {
-    height: 20px;
+input, select, option {
+    height: 25px;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color: blanchedalmond;
+    font-size: 1.1vw;
+    font-family: 'Quicksand', sans-serif;
+    height: 1%;
+
 }
 
 button {
@@ -69,6 +82,6 @@ button {
 }
 
 #total {
-    color: green;
+    color: #8baa1f;
 }
 

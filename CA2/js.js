@@ -39,7 +39,7 @@ function show() {
 
 function hide() {
     // same functionality as show, but hides the content instead
-    for (let e of document.querySelectorAll('.login'))
+    for (let e of document.querySelectorAll('#login_form'))
         e.style.visibility = 'hidden';
 }
 

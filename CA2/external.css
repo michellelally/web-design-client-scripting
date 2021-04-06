@@ -2,33 +2,26 @@
 @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
 
 html {
-
-    align-items: center;
-    justify-content: center;
-
     background-image: url(burger-background.jpg);
     background-color: #464646;
     background-attachment: fixed;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 h1 {
-    text-align: center;
     font-size: 2vw;
 }
 
 h3 {
-    text-align: center;
     font-size: 1.3vw;
 }
 
 .header {
     font-family: 'RocknRoll One', sans-serif;
     text-align: center;
-    color:  #F04020;
+    color: #BD0000;
 }
 
 td {
@@ -59,11 +52,11 @@ td {
 }
 
 .error {
-    color: darkred;
+    color: #BD0000;
 }
 
 input, select, option {
-    height: 25px;
+    height: 1%;
     border-top:none;
     border-left: none;
     border-right: none;
@@ -76,9 +69,13 @@ input, select, option {
 }
 
 button {
-    height: 10%;
-    width: 50%;
-    color: sandybrown;
+    height: 1%;
+    background: none;
+    border-radius: 5px;
+    font-size: 1.1vw;
+    font-family: 'Quicksand', sans-serif;
+    color: blanchedalmond;
+
 }
 
 #total {

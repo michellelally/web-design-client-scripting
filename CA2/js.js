@@ -1,8 +1,6 @@
 $(document).ready(function(){
     $("select.burgers").change(function(){
         var selectedBurger = $(this).children("option:selected").val();
-      //  alert("You have selected the burger - " + selectedBurger);
-
 
         if (selectedBurger == 3){
             alert("Due to health and safey reasons, we must warn you that you've chosen the Supersize Burger");
@@ -45,7 +43,12 @@ function hide() {
 
 // used this function from the previous years example of CA2 
 function validateForm() {
+    //setting x to the value of username in the login form
     var x = document.forms["login_form"]["username"].value;
+    // Storing username in local storage
+    localStorage.setItem("username", x);
+
+    //checking if the variable x is left blank 
     if (x == null || x == "") {
         alert("Username can not be blank.");
         return false;

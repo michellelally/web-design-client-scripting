@@ -20,10 +20,10 @@ function signIn() {
         document.getElementById("error").innerHTML = "Error:"
         document.getElementById("login_error").innerHTML = "Password must be 9 characters in length"
     } else {
-        // show the hidden elements so the user can complete the order
-        show();
         // hide the login 
         hide();
+        // show the hidden elements so the user can complete the order
+        show();
         // removing the error messages
         document.getElementById("error").innerHTML = ""
         document.getElementById("login_error").innerHTML = ""
@@ -45,7 +45,7 @@ function hide() {
 
 // used this function from the previous years example of CA2 
 function validateForm() {
-    var x = document.forms["order_form"]["username"].value;
+    var x = document.forms["login_form"]["username"].value;
     if (x == null || x == "") {
         alert("Username can not be blank.");
         return false;

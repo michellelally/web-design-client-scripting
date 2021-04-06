@@ -21,13 +21,22 @@
 <body>
     <!-- HTML5 opening body tag -->
 
-    <div id="content">
+    <div class="header">
         <h1>Finnegans</h1>
-        <p id="error_password"></p>
+        <h3>Gourmet Burger Bar & Restaurant</h3>
+      </div> 
 
-        <h2>Please log in to place an order</h2>
+    <div id="content">
+
         
-        <form id="order_form">
+
+        
+
+
+        <form id="login_form">
+
+            <h2>Please log in to place an order</h2>
+            <p id="error_password"></p>
 
             <table>
 
@@ -51,6 +60,14 @@
                     <td></td>
                     <td><button type="button" id="login" onclick="signIn()">LOGIN</button></td>
                 </tr>
+
+            </table>
+
+        </form>
+
+        <form id="order_form">
+
+            <table>
 
                 <tr class="order">
                     <td>Select a burger</td>
@@ -78,11 +95,14 @@
                     <td><button type="button" id="submit" alt="submit" onclick="order()">SUBMIT</button></td>
                 </tr>
 
+                <tr>
+                    <td></td>
+                    <td id="total"></td>
+                </tr>
+
             </table>
 
         </form>
-
-        <p id="total"></p>
 
     </div>
 

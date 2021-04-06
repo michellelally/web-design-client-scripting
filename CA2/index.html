@@ -1,10 +1,10 @@
 <!DOCTYPE html> <!-- HTML5 doctype -->
 
-<html lang="en">
-<!-- HTML5 opening HTML tag with language -->
+<html lang="en"> <!-- HTML5 opening HTML tag with language -->
 
-<head>
-<!-- HTML5 opening head tag -->
+
+<head> <!-- HTML5 opening head tag -->
+
 
     <meta charset="UTF-8"> <!-- HTML5 charset -->
 
@@ -18,51 +18,45 @@
 
 </head>
 
-<body>
-<!-- HTML5 opening body tag -->
+<body> <!-- HTML5 opening body tag -->
 
+    <div class="header"> <!-- HTML5 div tag used to create a header for the title -->
+        
+    <h1>Finnegans</h1> <!-- HTML5 h1 tag for displaying a heading -->
 
-    <div class="header">
-    <!-- HTML5 div tag used to create a header for the title -->
-        <h1>Finnegans</h1>
-        <h3>Gourmet Burger Bar & Restaurant</h3>
-      </div> 
+        <h3>Gourmet Burger Bar & Restaurant</h3> <!-- HTML5 h3 tag for displaying a heading -->
 
-      
-    <div id="content">
-    <!-- HTML5 div tag used to create a container for the content -->
+    </div> 
 
+    <div id="content"> <!-- HTML5 div tag used to create a container for the content -->
 
-        <form id="login_form">
-        <!-- HTML5 form which allows the user to login to the website -->
+        <form id="login_form"> <!-- HTML5 form which allows the user to login to the website -->
+    
+            <h3>Please log in to place an order</h3> <!-- HTML5 h3 tag for displaying a heading -->
 
+            <p id="error_password"></p> <!-- HTML5 p tag for displaying an error message -->
 
-            <h3>Please log in to place an order</h3>
-            <!-- HTML5 h3 tag for displaying a heading -->
+            <table> <!-- HTML5 table tag for displaying a form neatly -->
 
-            <p id="error_password"></p>
-
-            <table>
-
-                <tr class="error">
-                    <td id="error"></td>
-                    <td id="login_error"></td>
+                <tr class="error"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td id="error"></td> <!-- HTML5 td tag for inserting data into the row -->
+                    <td id="login_error"></td> <!-- HTML5 input tage for recieving user input -->
                 </tr>
 
-                <tr class="login">
-                    <td>Username</td>
-                    <td><input type="text" name="username" id="username" size="15" maxlength="50" /></td>
+                <tr class="login"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td>Username</td> <!-- HTML5 td tag for inserting data into the row -->
+                    <td><input type="text" name="username" id="username" size="15" maxlength="50" /></td> <!-- HTML5 input tage for recieving the users username for the site -->
                 </tr>
 
-                <tr class="login">
-                    <td>Password</td>
-                    <td><input type="password" name="password" id="password" size="15" />
+                <tr class="login"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td>Password</td> <!-- HTML5 td tag for inserting data into the row -->
+                    <td><input type="password" name="password" id="password" size="15" /> <!-- HTML5 input tage for recieving the users password for the site -->
                     </td>
                 </tr>
 
-                <tr class="login">
-                    <td></td>
-                    <td><button type="button" id="login" onclick="signIn()">LOGIN</button></td>
+                <tr class="login"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td></td>  <!-- HTML5 td tag for inserting data into the row -->
+                    <td><button type="button" id="login" onclick="signIn()">LOGIN</button></td>  <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
                 </tr>
 
             </table>
@@ -72,40 +66,39 @@
         <form class="order_form">
         <!-- HTML5 form which allows the user to place an order -->
 
+            <table> <!-- HTML5 table tag for displaying a form neatly -->
 
-            <table>
+                <tr></tr> <!-- HTML5 tr tag for creating a row in a table -->
 
-                <tr></tr>
-
-                <tr class="order">
-                    <td>Select a burger</td>
-                    <td><select name="menu" id="burgers" class="burgers">
-                            <option value="" disabled selected>Choose your burger</option>
-                            <option value="1">6oz - Large - €7</option>
-                            <option value="2">10oz - Extra Large - €9</option>
-                            <option value="3">16oz - Supersize - €17.50</option>
+                <tr class="order"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td>Select a burger</td> <!-- HTML5 td tag for inserting data into the row -->
+                    <td><select name="menu" id="burgers" class="burgers">  <!-- HTML5 select tag for generating a drop down list -->
+                            <option value="" disabled selected>Choose your burger</option>  <!-- HTML5 option tag to add to the drop down list -->
+                            <option value="1">6oz - Large - €7</option>  <!-- HTML5 option tag to add to the drop down list -->
+                            <option value="2">10oz - Extra Large - €9</option>  <!-- HTML5 option tag to add to the drop down list -->
+                            <option value="3">16oz - Supersize - €17.50</option>  <!-- HTML5 option tag to add to the drop down list -->
                         </select>
                     </td>
                 </tr>
 
-                <tr class="order">
-                    <td>Quantity:</td>
-                    <td><input type="number" name="quantity" id="quantity" maxlength="3" size="15"></td>
+                <tr class="order"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td>Quantity:</td> <!-- HTML5 td tag for inserting data into the row -->
+                    <td><input type="number" name="quantity" id="quantity" maxlength="3" size="15"></td> <!-- HTML5 input tage for recieving user input -->
                 </tr>
 
-                <tr class="order">
-                    <td>Discount Code:</td>
-                    <td><input type="text" name="discount" id="discount" size="15" maxlength="25" /></td>
+                <tr class="order"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td>Discount Code:</td> <!-- HTML5 td tag for inserting data into the row -->
+                    <td><input type="text" name="discount" id="discount" size="15" maxlength="25" /></td> <!-- HTML5 input tage for recieving user input -->
                 </tr>
 
-                <tr class="order">
-                    <td></td>
-                    <td><button type="button" id="submit" alt="submit" onclick="order()">SUBMIT</button></td>
+                <tr class="order"> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td></td>  <!-- HTML5 td tag for inserting data into the row -->
+                    <td><button type="button" id="submit" alt="submit" onclick="order()">SUBMIT</button></td>  <!-- HTML5 button tag for sending the data from the form to be manipulated using JS-->
                 </tr>
 
-                <tr>
-                    <td></td>
-                    <td id="total"></td>
+                <tr> <!-- HTML5 tr tag for creating a row in a table -->
+                    <td></td>  <!-- HTML5 td tag for inserting data into the row -->
+                    <td id="total"></td>  <!-- HTML5 td tag for displaying the total cost once it's generated -->
                 </tr>
 
             </table>
@@ -114,7 +107,6 @@
 
     </div>
 
-</div>
 </body>
 
 </html>
